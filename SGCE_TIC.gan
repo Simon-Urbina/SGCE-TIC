@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2026-05-18" view-index="1" gantt-divider-location="349" resource-divider-location="383" version="3.3.3322" locale="es_ES">
+    <description/>
+    <view zooming-state="default:7" id="gantt-chart">
+        <field id="tpd3" name="Nombre" width="199" order="0"/>
+        <field id="tpd4" name="Fecha de inicio" width="74" order="1"/>
+        <field id="tpd5" name="Fecha de fin" width="75" order="2"/>
+        <field id="tpd15" name="Notas" width="20" order="3"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+        <option id="color.recent"><![CDATA[#ccffff #ffccff #ccccff #ccffcc #ff9999 #ffcc66 #66ffcc]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nombre" width="237" order="0"/>
+        <field id="1" name="Función" width="142" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" uid="3154ac6579344124af21c6cc63c99fd7" name="Planificación" color="#66ffcc" meeting="false" start="2026-05-25" duration="5" complete="0" priority="2" expand="true">
+            <notes><![CDATA[Definición del alcance del sistema de inventario TIC, objetivos SMART y recursos del proyecto.]]></notes>
+            <depend id="1" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="1" uid="818237ae345c47d6bdacbd3af02323ab" name="Análisis de Requisitos" color="#ffcc66" meeting="false" start="2026-06-01" duration="10" complete="0" expand="true">
+            <notes><![CDATA[Levantamiento y validación de requisitos funcionales y no funcionales para la gestión de equipos de TI.]]></notes>
+            <depend id="3" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="3" uid="02dacfde4ed144d19082b0867d57a9d1" name="Diseño" color="#ff9999" meeting="false" start="2026-06-15" duration="20" complete="0" expand="true">
+            <notes><![CDATA[Diseño de arquitectura, modelo de datos, flujos de asignación y prototipos de interfaz.]]></notes>
+            <depend id="4" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="4" uid="2df77d9ce3864bd88ed4773366709959" name="Desarrollo" color="#ccffcc" meeting="false" start="2026-07-13" duration="30" complete="0" expand="true">
+            <notes><![CDATA[Implementación de módulos de inventario, asignación, estados y reportes mediante sprints.]]></notes>
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="5" uid="93b133ce2df94d6ebe4298a82f118a0b" name="Pruebas" color="#ccccff" meeting="false" start="2026-08-24" duration="20" complete="0" expand="true">
+            <notes><![CDATA[Pruebas funcionales, de seguridad y validación con personal del Departamento TIC.]]></notes>
+            <depend id="6" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="6" uid="7da25427a4e346ea920ee26de6eb4652" name="Despliegue" color="#ffccff" meeting="false" start="2026-09-21" duration="5" complete="0" expand="true">
+            <notes><![CDATA[Puesta en producción en infraestructura institucional y capacitación inicial.]]></notes>
+            <depend id="7" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="7" uid="0b3e8860852440049f6144b18eb562a0" name="Mantenimiento" color="#ccffff" meeting="false" start="2026-09-28" duration="10" complete="0" expand="true">
+            <notes><![CDATA[Corrección de incidencias, ajustes finales y soporte post-implementación.]]></notes>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="0" name="Gerente de Proyecto TIC" function="Default:1" contacts="" phone=""/>
+        <resource id="1" name="Analista de Requisitos" function="Default:0" contacts="" phone=""/>
+        <resource id="2" name="Arquitecto / Desarrollador Backend" function="Default:0" contacts="" phone=""/>
+        <resource id="3" name="Desarrollo Frontend" function="Default:0" contacts="" phone=""/>
+        <resource id="4" name="QA / Tester" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="0" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="6" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="7" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="1" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="3" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="4" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="5" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
